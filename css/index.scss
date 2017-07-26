@@ -25,7 +25,7 @@ $base-font-size:12 !default;
     width:33%;
     height:100%;
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
     .img1{
       width:pxToRem(86.83);
@@ -219,8 +219,6 @@ $base-font-size:12 !default;
     }
   }
 }
-
-
 /*------section-----*/
 #section{
   border-top:1px solid #ccc;

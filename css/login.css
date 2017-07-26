@@ -1,0 +1,240 @@
+/**
+  px to em function
+**/
+/**---header--***/
+/*header*/
+#header {
+  height: 4.16667em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap !important; }
+  #header .logo {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center; }
+    #header .logo .img1 {
+      width: 7.23583em;
+      height: 1.83333em; }
+  #header .download {
+    width: 67%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    #header .download .img2 {
+      height: 2.16667em;
+      width: 8.33333em; }
+    #header .download .img3 {
+      width: 3.5em;
+      height: 2.66667em;
+      border-left: 1px solid #ccc; }
+
+/**nav***/
+#nav {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid red;
+  background: #f3f3f3; }
+  #nav ul {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 1.16667em; }
+    #nav ul li {
+      height: 3.33333em;
+      line-height: 3.33333em; }
+    #nav ul li:first-child a {
+      color: red !important; }
+
+/**-----------market--------*/
+#market {
+  width: 100%;
+  height: auto;
+  margin-top: 1.66667em; }
+  #market .mar-form {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: center; }
+    #market .mar-form .inpu1 {
+      height: 3.33333em;
+      width: 100%;
+      border: 1px solid #ccc;
+      margin-bottom: 0.83333em;
+      box-sizing: border-box;
+      padding-left: 0.83333em;
+      border-radius: 0.41667em; }
+    #market .mar-form .span1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.16667em;
+      border: none; }
+    #market .mar-form .input2 {
+      background: #ff6767;
+      color: #fff;
+      font-size: 1.16667em; }
+
+/**----------------**/
+#login {
+  width: 100%;
+  height: auto;
+  margin-top: 1.66667em;
+  display: flex;
+  flex-wrap: wrap; }
+  #login p {
+    width: 100%;
+    text-indent: 0.83333em;
+    display: block;
+    margin-bottom: 0.83333em;
+    font-size: 1.16667em; }
+  #login ul {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #login ul li {
+      width: 50%;
+      height: auto;
+      text-align: center; }
+      #login ul li h4 {
+        font-size: 14px; }
+      #login ul li i {
+        width: 3.75em;
+        height: 3.75em;
+        display: inline-block;
+        margin: 0 auto;
+        background: url("../image/recipe/lin4.png") no-repeat;
+        background-size: cover; }
+      #login ul li .i1 {
+        background: url("../image/recipe/lin4.png") no-repeat 0px -3.75em;
+        background-size: cover; }
+
+.sec-u5 {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 0.83333em;
+  padding-right: 0.83333em;
+  margin-top: 1.66667em;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap !important; }
+  .sec-u5 li {
+    width: 23.5%;
+    font-size: 14px;
+    height: 2.83333em;
+    line-height: 2.83333em;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 0.83333em;
+    margin-bottom: 1.66667em; }
+
+.fenLei {
+  padding-top: 1.66667em;
+  padding-bottom: 1.66667em;
+  width: 60%;
+  text-align: center;
+  font-size: 1.16667em;
+  margin: 0 auto; }
+  .fenLei .fenLei-s {
+    display: block;
+    border: 1px solid #ff6767;
+    height: 3.33333em;
+    line-height: 3.33333em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ff6767;
+    border-radius: 1.66667em; }
+
+.sec-title {
+  width: 100%;
+  font-size: 14px;
+  padding-top: 2.08333em;
+  padding-bottom: 1.25em;
+  padding-left: 0.83333em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.sec-title::before {
+  border: 3px solid red;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  margin: 1px 5px 0 0;
+  width: 6px; }
+
+.mar-u3 {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+  .mar-u3 li {
+    width: 30%;
+    height: auto;
+    text-align: center; }
+    .mar-u3 li img {
+      width: 100%;
+      height: auto; }
+
+.kong {
+  height: 5.41667em;
+  width: 100%; }
+
+.mar-u1 {
+  width: 95%;
+  height: auto;
+  margin: 1.66667em auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap !important; }
+  .mar-u1 li {
+    width: 23.5%;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 1.5em;
+    margin-bottom: 1.25em; }
+
+.fenLei {
+  padding-top: 1.66667em;
+  padding-bottom: 1.66667em;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.16667em; }
+  .fenLei .fenLei-s {
+    display: block;
+    border: 1px solid #ff6767;
+    height: 3.33333em;
+    line-height: 3.33333em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ff6767;
+    border-radius: 1.66667em; }
+
+#footer {
+  width: 95%;
+  margin: 0 auto;
+  color: #999;
+  line-height: 150%;
+  padding-top: 1.66667em;
+  padding-bottom: 1.66667em;
+  text-align: center; }
+
+/*# sourceMappingURL=login.css.map */
