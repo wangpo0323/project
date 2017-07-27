@@ -14,41 +14,123 @@ $base-font-size:12 !default;
   }
   @return ($target-size/$context)*1em;
 }
+
 /*header*/
 #header{
-  height:pxToRem(50);
+  height:auto;
   width:100%;
   display:flex;
-  justify-content:flex-start;
-  flex-wrap: nowrap !important;
-  .logo{
-    width:33%;
-    height:100%;
+  flex-direction: column;
+  .header-t{
+    width:100%;
+    height:pxToRem(50);
     display: flex;
-    /*justify-content: space-around;*/
+    justify-content: space-between;
     align-items: center;
-    .img1{
-      width:pxToRem(86.83);
-      height:pxToRem(22);
+    .logo{
+      width:33%;
+      height:auto;
+      .img1{
+        width:pxToRem(86.83);
+        height:pxToRem(22);
+      }
+    }
+    .download{
+      width:67%;
+      height:pxToRem(50);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .img2{
+        width:pxToRem(100);
+        height: pxToRem(26);
+      }
+      .img3{
+        width:pxToRem(42);
+        height: pxToRem(32);
+        border-left:1px solid #ccc;
+      }
     }
   }
-  .download{
-    width:67%;
-    height:100%;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    .img2{
-      height:pxToRem(26);
-      width:pxToRem(100);
-    }
-    .img3{
-      width: pxToRem(42);
-      height: pxToRem(32);
-      border-left:1px solid #ccc;
+  /***隐藏菜单****/
+  .yinC{
+    width:100%;
+    height: auto;
+    .yinC-u{
+      width:95%;
+      margin:0 auto;
+      height:auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap !important;
+      align-items: center;
+      text-align: center;
+      li{
+        width:25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        i{
+          margin-top:pxToRem(15);
+          width:pxToRem(30);
+          height: pxToRem(30);
+          display: inline-block;
+        }
+      }
+      li:nth-child(1) i{
+        background:url("../image/recipe/icon2.png") no-repeat 0 0;
+        background-size:cover;
+      }
+      li:nth-child(2) i{
+        background:url("../image/recipe/icon2.png") no-repeat pxToRem(-30) 0;
+        background-size:cover;
+      }
+      li:nth-child(3) i{
+        background:url("../image/recipe/icon2.png") no-repeat pxToRem(-60) 0;
+        background-size:cover;
+      }
+      li:nth-child(4) i{
+        background:url("../image/recipe/icon2.png") no-repeat pxToRem(-90) 0;
+        background-size:cover;
+      }
+      li:nth-child(5) i{
+        background:url("../image/recipe/icon2.png") no-repeat pxToRem(-90) 0;
+        background-size:cover;
+      }
     }
   }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*nav*/
 #nav{
@@ -97,19 +179,7 @@ $base-font-size:12 !default;
     }
   }
 }
-/*-----banner-------*/
-#banner{
-  width:100%;
-  height:pxToRem(187);
-  .banner_u{
-    width:100%;
-    height:100%;
-    img{
-      width:100%;
-      height:pxToRem(187);
-    }
-  }
-}
+
 /*--------hot1------*/
 #hot1{
   width:100%;

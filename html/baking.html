@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>baking</title>
+    <title>烘焙</title>
     <link  type="text/css" rel="stylesheet" href='../css/baking.css'/>
     <link  type="text/css" rel="stylesheet" href="../css/pubLick.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script type="text/javascript" src="../js/flexible.js"></script>
 </head>
@@ -12,21 +13,26 @@
     <!------header---->
     <div id="header">
         <ul class="head-u">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">菜谱</a></li>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="The-recipe.html">菜谱</a></li>
             <li><a href="#">食材</a></li>
             <li><a href="#">专题</a></li>
         </ul>
-        <div class="sGe"><img class="sGe-img" src="../image/recipe/s_t1_m.gif"/></div>
+        <div class="sGe">
+            <img class="sGe-img" src="../image/recipe/s_t1_m.gif"/>
+        </div>
     </div>
     <!--------nav---->
     <div id="nav">
         <ul class="nav-u">
-            <li><img src="../image/recipe/logo_big.png"/><span class="span" style="font-size:18px;">烘焙</span></li>
+            <li>
+                <a href="index.html" style="display:inline;">
+                <img src="../image/recipe/logo_big.png"/></a>
+                <span class="span" style="font-size:18px;">烘焙</span></li>
         </ul>
         <ul class="nav-u1">
             <li class="regond"><a href="#">注册</a></li>
-            <li class="login"><a style="color:#eeeeee !important;" href="#">登录</a></li>
+            <li class="login"><a style="color:#eeeeee !important;" href="login.html">登录</a></li>
         </ul>
     </div>
     <!----hongbei_middle_top--->
@@ -38,11 +44,15 @@
             <li><a href="#">互动</a></li>
         </ul>
     </div>
-    <!-----------bacnner---->
-    <div id="banner">
-        <ul>
-            <li><img src="../image/recipe/20160310145757720049013.jpg"/></li>
-        </ul>
+    <!-----bacnner---->
+    <div id="banner" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img style='height:187px; width:100%;' src="../image/recipe/20160310145757720049013.jpg"/></div>
+            <div class="swiper-slide"><img  style='height:187px; width:100%;' src="../image/recipe/20160309145749015353813.jpg"/></div>
+            <div class="swiper-slide"><img style='height:187px; width:100%;' src="../image/recipe/20160308145740359275813.jpg"/></div>
+            <div class="swiper-slide"><img style='height:187px; width:100%;' src="../image/recipe/20160307145732312362213.jpg"/></div>
+        </div>
+        <div class="swiper-pagination" style="bottom:20px;right:10px;text-align: right;"></div>
     </div>
     <!----market--->
     <div id="market">
@@ -118,3 +128,20 @@
     </div>
 </body>
 </html>
+<script type="text/javascript" src="../js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000,//可选选项，自动滑动
+        direction: 'horizontal',
+        loop: true,
+        effect : 'fade',
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        paginationClickable :true,
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        // 如果需要滚动条
+        //  scrollbar:'.swiper-scrollbar',
+    })
+</script>

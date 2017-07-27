@@ -1,35 +1,77 @@
+@charset "UTF-8";
 /*
   px to rem function
 */
 /*header*/
 #header {
-  height: 4.16667em;
+  height: auto;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap !important; }
-  #header .logo {
-    width: 33%;
-    height: 100%;
+  flex-direction: column;
+  /***闅愯棌鑿滃崟****/ }
+  #header .header-t {
+    width: 100%;
+    height: 4.16667em;
     display: flex;
-    /*justify-content: space-around;*/
+    justify-content: space-between;
     align-items: center; }
-    #header .logo .img1 {
-      width: 7.23583em;
-      height: 1.83333em; }
-  #header .download {
-    width: 67%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; }
-    #header .download .img2 {
-      height: 2.16667em;
-      width: 8.33333em; }
-    #header .download .img3 {
-      width: 3.5em;
-      height: 2.66667em;
-      border-left: 1px solid #ccc; }
+    #header .header-t .logo {
+      width: 33%;
+      height: auto; }
+      #header .header-t .logo .img1 {
+        width: 7.23583em;
+        height: 1.83333em; }
+    #header .header-t .download {
+      width: 67%;
+      height: 4.16667em;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      #header .header-t .download .img2 {
+        width: 8.33333em;
+        height: 2.16667em; }
+      #header .header-t .download .img3 {
+        width: 3.5em;
+        height: 2.66667em;
+        border-left: 1px solid #ccc; }
+  #header .yinC {
+    width: 100%;
+    height: auto; }
+    #header .yinC .yinC-u {
+      width: 95%;
+      margin: 0 auto;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap !important;
+      align-items: center;
+      text-align: center; }
+      #header .yinC .yinC-u li {
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #header .yinC .yinC-u li i {
+          margin-top: 1.25em;
+          width: 2.5em;
+          height: 2.5em;
+          display: inline-block; }
+      #header .yinC .yinC-u li:nth-child(1) i {
+        background: url("../image/recipe/icon2.png") no-repeat 0 0;
+        background-size: cover; }
+      #header .yinC .yinC-u li:nth-child(2) i {
+        background: url("../image/recipe/icon2.png") no-repeat -2.5em 0;
+        background-size: cover; }
+      #header .yinC .yinC-u li:nth-child(3) i {
+        background: url("../image/recipe/icon2.png") no-repeat -5em 0;
+        background-size: cover; }
+      #header .yinC .yinC-u li:nth-child(4) i {
+        background: url("../image/recipe/icon2.png") no-repeat -7.5em 0;
+        background-size: cover; }
+      #header .yinC .yinC-u li:nth-child(5) i {
+        background: url("../image/recipe/icon2.png") no-repeat -7.5em 0;
+        background-size: cover; }
 
 /*nav*/
 #nav {
@@ -72,17 +114,6 @@
       height: 100%;
       background: #fff;
       border-left: 1px solid #ccc; }
-
-/*-----banner-------*/
-#banner {
-  width: 100%;
-  height: 15.58333em; }
-  #banner .banner_u {
-    width: 100%;
-    height: 100%; }
-    #banner .banner_u img {
-      width: 100%;
-      height: 15.58333em; }
 
 /*--------hot1------*/
 #hot1 {

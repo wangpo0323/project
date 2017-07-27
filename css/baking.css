@@ -102,22 +102,6 @@
         padding: 0 0.5em; }
 
 /*---------banner-----**/
-#banner {
-  width: 100%;
-  height: auto;
-  padding-top: 0.83333em;
-  padding-bottom: 1.25em;
-  background: #e9e9e9; }
-  #banner ul {
-    width: 100%;
-    height: auto; }
-    #banner ul li {
-      width: 100%;
-      height: auto; }
-      #banner ul li img {
-        width: 100%;
-        height: 15.58333em; }
-
 /***market**/
 #market {
   width: 100%;

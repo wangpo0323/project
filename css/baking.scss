@@ -138,25 +138,6 @@ $base-font-size:12 !default;
 
 /*---------banner-----**/
 
-#banner{
-  width:100%;
-  height: auto;
-  padding-top:pxToRem(10);
-  padding-bottom: pxToRem(15);
-  background:#e9e9e9;
-  ul{
-    width:100%;
-    height: auto;
-    li{
-      width:100%;
-      height: auto;
-      img{
-        width:100%;
-        height: pxToRem(187);
-      }
-    }
-  }
-}
 /***market**/
 #market{
   width: 100%;

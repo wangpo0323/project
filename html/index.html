@@ -2,31 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>首页</title>
     <link  type="text/css" rel="stylesheet" href='../css/index.css'/>
     <link  type="text/css" rel="stylesheet" href="../css/pubLick.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
     <meta id="vp" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script type="text/javascript" src="../js/flexible.js"></script>
 </head>
 <body>
     <!---header-->
     <div id="header">
-        <div class="logo">
-            <img class="img1" src="../image/index/logo.png"/>
+        <div class="header-t">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="img1" src="../image/index/logo.png"/>
+                </a>
+            </div>
+            <div class="download">
+                <img class="img2" src="../image/index/down.png"/>
+                <img class="img3" src="../image/index/search2.png"/>
+             </div>
         </div>
-        <div class="download">
-            <img class="img2" src="../image/index/down.png"/>
-            <img class="img3" src="../image/index/search2.png"/>
+        <!--yincang----->
+        <div class="yinC">
+            <ul class="yinC-u">
+                <li>
+                    <i></i>
+                    <span>首页</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>菜谱</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>食材</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>珍选</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>健康</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>话题</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>菜单</span>
+                </li>
+                <li>
+                    <i></i>
+                    <span>专题</span>
+                </li>
+            </ul>
+            <ul class="yinC-u1"></ul>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
     <!---nav---->
     <div id="nav">
         <ul class="nav-u">
-            <li><a href="#">菜谱</a></li>
+            <li><a href="The-recipe.html">菜谱</a></li>
             <li><a href="#">食材</a></li>
-            <li><a href="#">话题</a></li>
+            <li><a href="topic.html">话题</a></li>
             <li><a href="#">甄选</a></li>
-            <li><a href="#">健康</a></li>
+            <li><a href="health.html">健康</a></li>
         </ul>
     </div>
     <!----seach--->
@@ -37,10 +92,15 @@
         </form>
     </div>
     <!====banner=====>
-    <div id="banner">
-        <ul class="banner_u">
-            <li><img src="../image/index/20170613149732172241213.jpg"/></li>
-        </ul>
+    <div id="banner" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img style='height:187px; width:100%;' src="../image/index/20170613149732172241213.jpg"/></div>
+            <div class="swiper-slide"><img  style='height:187px; width:100%;' src="../image/index/20170622149809657996613.jpg"/></div>
+            <div class="swiper-slide"><img style='height:187px; width:100%;' src="../image/index/20170712149982570035013 (1).jpg"/></div>
+            <div class="swiper-slide"><img style='height:187px; width:100%;' src="../image/index/20170718150034505310013.jpg"/></div>
+            <div class="swiper-slide"><img style='height:187px; width:100%;' src="../image/index/20170720150051491455613.jpg"/></div>
+        </div>
+        <div class="swiper-pagination" style="right:10px;text-align: right;"></div>
     </div>
     <!----hot1---->
     <div id="hot1">
@@ -284,7 +344,7 @@
         <div class="sec-title">快捷导航</div>
         <ul class="usec-u10">
             <li>
-                <span>登录</span>
+                <span><a href="login.html">登录</a></span>
                 <span><a href="#">注册新会员&gt;</a></span>
             </li>
             <li>
@@ -330,6 +390,22 @@
             <li>京公网安备 11010502031041号 / 京ICP证090244号 / 京ICP备10020153号</li>
         </ul>
     </div>
-
 </body>
 </html>
+<script type="text/javascript" src="../js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000,//可选选项，自动滑动
+        direction: 'horizontal',
+        loop: true,
+        effect : 'fade',
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        paginationClickable :true,
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        // 如果需要滚动条
+        //  scrollbar:'.swiper-scrollbar',
+    })
+</script>

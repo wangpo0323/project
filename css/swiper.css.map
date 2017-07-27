@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;GAEG;AAgBH,iBAAkB;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,MAAY;;AAItB,OAAO;EACL,KAAK,EAAC,IAAI;EACV,MAAM,EAAE,UAAY;EACpB,WAAW,EAAC,SAAW;EACvB,cAAc,EAAE,MAAW",
+"sources": ["swiper.scss"],
+"names": [],
+"file": "swiper.css"
+}

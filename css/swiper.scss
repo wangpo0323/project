@@ -1,0 +1,30 @@
+/**
+  px to em function
+**/
+@function strip-units ($number) {
+  @return $number/ $number($number * 0+1);
+}
+$base-font-size:12 !default;
+@function pxToRem($target-size,$context:$base-font-size){
+  @if not unitless($target-size){
+    $target-size:strip-units($target-size);
+  }
+  @if not unitless($context){
+    $context:strip-units($context);
+  }
+  @return ($target-size/$context)*1em;
+}
+
+
+.swiper-container {
+  width: 100%;
+  height: pxToRem(270);
+}
+
+
+#banner{
+  width:100%;
+  height: pxToRem(187);
+  padding-top:pxToRem(10);
+  padding-bottom: pxToRem(15);
+}

@@ -1,0 +1,256 @@
+/**
+    px to em function
+***/
+/**-----header------**/
+#header {
+  height: 4.16667em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap !important; }
+  #header .logo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    /*justify-content: space-around;*/
+    align-items: center; }
+    #header .logo .img1 {
+      width: 7.23583em;
+      height: 1.83333em; }
+    #header .logo .title a {
+      font-size: 16px;
+      padding-left: 0.41667em; }
+  #header .download {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    #header .download .img2 {
+      height: 2.16667em;
+      width: 8.33333em; }
+    #header .download .img3 {
+      width: 3.5em;
+      height: 2.66667em;
+      border-left: 1px solid #ccc; }
+
+/**-----nav-----**/
+#nav {
+  width: 100%;
+  height: 3.5em;
+  border-bottom: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ccc; }
+  #nav p {
+    font-size: 1.33333em;
+    text-indent: 0.41667em;
+    width: 30%;
+    color: red; }
+  #nav ul {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end; }
+    #nav ul li {
+      width: 20%;
+      text-align: center;
+      font-size: 1.16667em; }
+
+/*---market---*/
+#market {
+  width: 100%;
+  height: auto;
+  margin-top: 0.83333em; }
+  #market .mar-u {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap !important; }
+    #market .mar-u .li {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding-top: 0.83333em;
+      border-bottom: 1px solid #e1e1e1; }
+      #market .mar-u .li .mar-u-top {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start; }
+        #market .mar-u .li .mar-u-top img {
+          width: 3.33333em;
+          height: 3.33333em;
+          border-radius: 50%;
+          margin-right: 0.83333em; }
+        #market .mar-u .li .mar-u-top .mar-u-top-text p {
+          font-size: 1.33333em; }
+        #market .mar-u .li .mar-u-top .mar-u-top-text span {
+          color: #ccc; }
+      #market .mar-u .li .mar-u-cont {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.83333em 0; }
+        #market .mar-u .li .mar-u-cont h3 {
+          font-size: 1.33333em;
+          font-weight: normal;
+          margin-bottom: 0.83333em; }
+        #market .mar-u .li .mar-u-cont .mar-u-cont-u {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: flex-start; }
+          #market .mar-u .li .mar-u-cont .mar-u-cont-u li img {
+            width: 7.5em;
+            height: 7.5em;
+            margin-right: 0.83333em; }
+        #market .mar-u .li .mar-u-cont h4 {
+          width: 100%;
+          margin-top: 0.83333em;
+          font-size: 1em;
+          color: #ccc;
+          font-weight: normal; }
+  #market .xia-yi {
+    width: 100%;
+    height: auto;
+    padding: 1.66667em 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    #market .xia-yi .xia-yi-1 {
+      width: 60%;
+      height: 3.33333em;
+      border: 1px solid red;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 3.33333em;
+      border-radius: 1.66667em;
+      color: red; }
+    #market .xia-yi h5 {
+      width: 100%;
+      height: 0.83333em; }
+
+/**guang**/
+.guang-gao {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; }
+  .guang-gao li {
+    width: 33.33%;
+    height: auto;
+    text-align: center; }
+    .guang-gao li .img6 {
+      width: 100%;
+      height: auto; }
+    .guang-gao li .p1 {
+      position: relative; }
+    .guang-gao li .p1::before {
+      display: flex;
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 2em;
+      height: 1.16667em;
+      background: url("../image/index/wap_ads_2x.png") no-repeat;
+      background-size: cover; }
+
+.guang-gao1 {
+  margin-top: 1.66667em; }
+  .guang-gao1 li img {
+    padding-left: 0.41667em; }
+  .guang-gao1 li .p1 {
+    position: relative; }
+  .guang-gao1 li .p1::before {
+    background: none; }
+
+.guang-gao2 {
+  margin-top: 1.66667em; }
+
+/***bottom**/
+.mar-u1 {
+  width: 95%;
+  height: auto;
+  margin: 1.66667em auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap !important; }
+  .mar-u1 li {
+    width: 23.5%;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 1.5em;
+    margin-bottom: 1.25em; }
+
+.fenLei {
+  padding-top: 1.66667em;
+  padding-bottom: 1.66667em;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.16667em; }
+  .fenLei .fenLei-s {
+    display: block;
+    border: 1px solid #ff6767;
+    height: 3.33333em;
+    line-height: 3.33333em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ff6767;
+    border-radius: 1.66667em; }
+
+.sec-title {
+  width: 100%;
+  font-size: 14px;
+  padding-top: 2.08333em;
+  padding-bottom: 1.25em;
+  padding-left: 0.83333em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.sec-title::before {
+  border: 3px solid red;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  margin: 1px 5px 0 0;
+  width: 6px; }
+
+.mar-u3 {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+  .mar-u3 li {
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 0.83333em; }
+    .mar-u3 li img {
+      width: 100%;
+      height: auto; }
+
+#footer {
+  width: 95%;
+  margin: 0 auto;
+  color: #999;
+  line-height: 150%;
+  padding-top: 1.66667em;
+  padding-bottom: 1.66667em;
+  text-align: center; }
+
+/*# sourceMappingURL=topic.css.map */
