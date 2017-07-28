@@ -20,11 +20,11 @@
             </div>
             <div class="download">
                 <img class="img2" src="../image/index/down.png"/>
-                <img class="img3" src="../image/index/search2.png"/>
+                <img class="img3" src="../image/index/search2.png" id="img3"/>
              </div>
         </div>
         <!--yincang----->
-        <div class="yinC">
+        <div class="yinC" id="yinC" style="display: none">
             <ul class="yinC-u">
                 <li>
                     <i></i>
@@ -59,22 +59,44 @@
                     <span>专题</span>
                 </li>
             </ul>
-            <ul class="yinC-u1"></ul>
+            <ul class="yinC-u1">
+                <li><a href="login.html" class="login">登录</a></li>
+                <li><a href="#" class="regend">注册</a></li>
+            </ul>
+            <ul class="yinC-u2">
+                <li>
+                    <form>
+                        <input class="input10" type="text" placeholder="搜索菜谱食材或菜单"/>
+                        <input type="button" class="input11" value="搜索"/>
+                    </form>
+                </li>
+            </ul>
+            <div class="close" id="cha">x</div>
         </div>
     </div>
+    <script>
+        var yinC=document.getElementById("yinC");
+        var img3=document.getElementById("img3");
+        var cha=document.getElementById("cha");
+        function showDiv() {
+            if (yinC) {
+                if (yinC.style.display == 'block') {
+                      yinC.style.display = 'none';
+                } else {
+                      yinC.style.display = 'block';
+                }
+            }
+        }
+        img3.onclick=function(){
+            showDiv();
+        }
 
+      cha.onclick=function(){
+            yinC.style.display="none";
+        }
 
-
-
-
-
-
-
-
-
-
-
-    <!---nav---->
+    </script>
+   <!---nav---->
     <div id="nav">
         <ul class="nav-u">
             <li><a href="The-recipe.html">菜谱</a></li>

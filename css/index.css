@@ -36,7 +36,10 @@
         border-left: 1px solid #ccc; }
   #header .yinC {
     width: 100%;
-    height: auto; }
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease-in-out; }
     #header .yinC .yinC-u {
       width: 95%;
       margin: 0 auto;
@@ -70,8 +73,65 @@
         background: url("../image/recipe/icon2.png") no-repeat -7.5em 0;
         background-size: cover; }
       #header .yinC .yinC-u li:nth-child(5) i {
-        background: url("../image/recipe/icon2.png") no-repeat -7.5em 0;
+        background: url("../image/recipe/icon2.png") no-repeat -10em 0;
         background-size: cover; }
+      #header .yinC .yinC-u li:nth-child(6) i {
+        background: url("../image/recipe/icon2.png") no-repeat -12.5em 0;
+        background-size: cover; }
+      #header .yinC .yinC-u li:nth-child(7) i {
+        background: url("../image/recipe/icon2.png") no-repeat -15em 0;
+        background-size: cover; }
+      #header .yinC .yinC-u li:nth-child(8) i {
+        background: url("../image/recipe/icon2.png") no-repeat -17.5em 0;
+        background-size: cover; }
+    #header .yinC .yinC-u1 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      margin-top: 1.66667em; }
+      #header .yinC .yinC-u1 li {
+        width: 50%;
+        height: auto;
+        display: flex;
+        justify-content: center; }
+        #header .yinC .yinC-u1 li a {
+          width: 80%;
+          height: 2.5em;
+          border-radius: 1.25em;
+          text-align: center;
+          line-height: 2.5em;
+          color: #fff !important;
+          background: #ff6767; }
+    #header .yinC .yinC-u2 {
+      width: 100%;
+      height: auto;
+      margin-top: 1.66667em; }
+      #header .yinC .yinC-u2 li {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center; }
+        #header .yinC .yinC-u2 li form {
+          width: 80%;
+          height: 2.91667em;
+          border: 1px solid #ccc;
+          display: flex;
+          justify-content: flex-start; }
+          #header .yinC .yinC-u2 li form .input10 {
+            width: 80%;
+            height: 100%;
+            text-indent: 0.83333em; }
+          #header .yinC .yinC-u2 li form .input11 {
+            width: 20%;
+            height: 100%; }
+    #header .yinC .close {
+      margin-top: 0.83333em;
+      height: 1.66667em;
+      font-size: 1.33333em;
+      line-height: 1.66667em;
+      text-align: center;
+      background: #ccc; }
 
 /*nav*/
 #nav {
